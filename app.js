@@ -1,6 +1,7 @@
 import { fetchMovieAvailability, fetchMovieList } from "./api.js";
 
 const main = document.querySelector("main");
+const nav = document.querySelector('nav');
 const btn = document.getElementById('book-ticket-btn');
 let seatBooked = [];
 
@@ -10,7 +11,7 @@ function loader(flag) {
   let loading = document.createElement("div");
   if (flag === 1) {
     loading.id = "loader";
-    main.appendChild(loading);
+    nav.after(loading);
     loading.textContent = "Loading...";
   } else {
     let loader = document.getElementById("loader");
@@ -57,7 +58,8 @@ function addList(lists) {
 function seatAvailable(lists) {
   let h3 = document.querySelector("#booker > h3");
   h3.style.visibility = "visible";
-
+ 
+  
   let grids = document.querySelector("#booker-grid-holder");
   grids.innerHTML = "";
   for (let i = 0; i < 2; i++) {
