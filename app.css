@@ -1,18 +1,90 @@
+
+  
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 16px;
+      color: white;
+      background-color: navy;
+  }
+  nav ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-around;
+      width: 50%;
+  }
+  #loader{
+      margin-top: 5px;
+      padding: 10px;
+  }
+  .movie-holder{
+      margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 2rem;
 }
-
-
-
-
-
-
-.d-none{
-    display: none;
-}
-.v-none{
-    visibility: hidden;
-}
-
+  .movie-img-wrapper{
+      height: 300px;
+      width: 180px;
+      background-size: cover;
+  }
+  .d-none{
+      display: none;
+  }
+  .v-none{
+      visibility: hidden;
+      text-align: center;
+  }
+  #booker-grid-holder{
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  }
+  .booking-grid{
+      width: 400px;
+      height: 300px;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(3,1fr);
+    gap: 5px;
+  }
+  .booking-grid div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color:white;
+  }
+  .unavailable-seat{
+   background-color: red;
+  }
+  .available-seat{
+      background-color: green;
+  }
+  .selected-seat{
+    border:4px outset rgb(0, 0, 0);
+  }
+  #booker{
+      text-align: center;
+  }
+  #book-ticket-btn{
+    padding: 5px;
+    text-align: center;
+    margin: 2rem;
+  }
+  #confirm-purchase h3{
+    margin: 10px auto;
+  }
+  #confirm-purchase h3{
+      padding-bottom: 5px;
+  }
+  #confirm-purchase input{
+    margin-bottom: 5px;
+  }
+  
